@@ -1,0 +1,85 @@
+/********** Fixes **********/
+
+* {
+  margin:0;
+  padding:0;
+  border:0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Positioning Classes */
+.wrapperfeatured {
+/*	display: table;*/
+  display: flex;
+}
+
+
+.col1 {
+	/*	display: table-cell; vertical-align: top;*/	
+  flex: 3;
+  float: left;
+}
+
+.sidebar {
+  /*width: 300px; vertical-align: top;*/
+  float: right;
+  flex: 1;
+}
+
+.wrapperdeals {
+  column-count: 3;
+}
+
+.columndetails {
+  column-count: 3;
+}
+
+
+
+
+
+
+
+/*
+.columnfeatured > *col1 {
+  flex: 1 1 70%;
+}
+    
+.columnfeatured > *col1 {
+  flex: 1 1 30%;
+}
+
+.wrapperfeatured {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+
+.col1 {
+	display: table-cell;
+	width: 66.66%;
+	vertical-align: top;
+}
+
+.sidebar {
+	display: table-cell;
+	vertical-align: top;
+  float: right;
+}
+*/
